@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    background-image: url("/src/resources/Earth.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.container > div{
+    margin: 10px;
+}
+
+.abductButton{
+    background-color: #00e30f;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 9px black;
+    width: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.abductButton:hover{
+    background-color: #00910a; 
+}
+
+.abductButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.text{
+    color: #00e30f;
+    font-family: 'Orbitron', sans-serif;
+    margin: .5rem;
+}
+
+.counter{
+    display: inline-flex;
+    justify-content: center;
+    background-color: black;
+    width: 11rem;
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+    margin: .5rem;
+}
+
+.autoPrice{
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+}    
+
+.multiPrice{
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#headline{
+    display: flex;
+    justify-content: center;
+    border-color: #ff0000;
+    font-size: 5rem;
+}
+
+#humanCounter{
+    display: flex;
+    flex-direction: column;
+    width: fit content;
+    align-items: center;
+    background-color: rgba(36, 33, 35, 0.74);
+    border-radius: 15px;
+}
+
+#tractor{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    align-items: center;
+    background-color: rgba(36, 33, 35, 0.74);
+    border-radius: 15px;
+}
+
+.multiButton{
+    background-color: #00e30f;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 9px black;
+    width: fit-content;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.multiButton:hover{
+    background-color: #00910a; 
+}
+
+.multiButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#drone{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    align-items: center;
+    background-color: rgba(36, 33, 35, 0.74);
+    border-radius: 15px;
+}
+
+.priceCounter{
+    display: inline-flex;
+    justify-content: center;
+    background-color: black;
+    width: 11rem;
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+    margin: .5rem;
+}
+
+.autoButton{
+    background-color: #00e30f;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 9px black;
+    width: fit-content;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.autoButton:hover {
+    background-color: #00910a; 
+}
+
+.autoButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
