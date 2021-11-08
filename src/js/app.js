@@ -8,6 +8,7 @@ let multiPrice = 100;
 var multiMultiplier = 0;
 let x = 0;
 let myDrone = true;
+let droneInterval;
 
 const abduct = document.querySelector(".abductButton");
 const counter = document.querySelector(".counter");
@@ -83,6 +84,7 @@ restart.addEventListener("click", ()=> {
     multiMultiplier = 0;
     autoMultiplier = 0;
     myDrone = false;
+    Drone();
     UpdateAutoPrice();
     UpdateCounter();
     UpdateMultiPrice();
@@ -105,18 +107,18 @@ function flashText(){
 
 
 function Drone(){
+    
     if(myDrone === true){
-        setInterval(function autoCount(){
+        droneInterval = setInterval(function autoCount(){
             humanCount += (1 * autoMultiplier);
             UpdateCounter();
         }, 1000);
+        console.log("set droneInterval:" + droneInterval);
     }
     else{
-        setInterval(function autoCount(){
-            humanCount += (1 * autoMultiplier);
-            UpdateCounter();
-        }, 0);
-    }    
+        console.log("clear droneInterval:" + droneInterval);
+        clearInterval(droneInterval);
+    } 
 };
 
 
