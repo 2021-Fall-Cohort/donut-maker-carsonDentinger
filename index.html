@@ -11,75 +11,78 @@
     <title>Alien Invasion</title>
 </head>
 <body>
-    
-        <h1 class="text" id="headline">ALIEN INVASION</h1>
-    <div class="container">
-        
-        <div id="drone">
-            <h3 class="text">Abductor Drone</h3>
-            <p class="text">Price</p>
-            <p class="autoPrice priceCounter"></p>
-            <p class="text">Drones Activated</p>
-            <p class="autoCount priceCounter">0</p>
-            <button class= "autoButton">Purchase</button>
-        </div>
-        <div id="humanCounter">
-            <h2 class="text">HUMAN COUNT</h2>
-            <p class="counter">0</p>
-            <button class="abductButton">Abduct<br> Human</button>
-        </div>
-        <div id="tractor">
-            <h3 class="text">Tractor Beam Upgrade</h3>
-            <p class="text">Price</p>
-            <p class="multiPrice counter"></p>
-            <p class="text">Upgrade Count</p>
-            <p class="multiCount counter">0</p>
-            <button class="multiButton">Purchase</button>
-        </div>
-    </div>
-    <div id="buttonHolder">    
-        <button id="myBtn">Mission Details</button>
-        <a href="https://carsondentinger.github.io/" target="_blank">    
-            <button id="portfolio">Contact Mothership</button>
-        </a>    
-    </div>
-    <div id="buttonHolder2">
-        <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">    
-            <button id="cookie">Visit Inspiration</button>
-        </a>
-        <button id="restart">Restart Invasion</button>
-    </div>
-    <div id="myModal" class="modal">
-
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2 class="text" id="popupHeader">OPERATION: FREE RIDE</h2>
+    <div class="metaContainer">
+        <canvas id="canvas" width="100" height="100"></canvas>
+            <h1 class="text" id="headline">ALIEN INVASION</h1>
+        <div class="container">
             
-          </div>
-          <div class="modal-body text">
-            <p class="text">Esteemed Pleiadian,<br><br>A most sinister deal has been struck with the impressively gullible human 
-                leader Dwight D. Eisenhower! In exchange for primitive WiFi technology we have been given clearance to enter the 
-                airspace of planet Earth and select human specimens to return to our home planet. There we will begin the 
-                process of assimilating our species' DNA to create hybrids and further our agenda of galactic domination. <br><br> But first,
-                we need humans. LOTS and LOTS of humans! Purchase tractor beam upgrades to increase the amount of humans that 
-                can be abducted at once. And don't forget to purchase abduction drones that will scour the face of the planet  
-                and automatically abduct any stray humans they find!<br><br> These upgrades to your spaceship will compund, and soon
-                we will be Lords of this planet......and next, the GALAXY!</p>
-          </div>
-          <div class="modal-footer text">
-            <h3>Happy Hunting!<br>-Leader Valiant Thor</h3>
-          </div>
+            <div id="drone">
+                <h3 class="text">Abductor Drone</h3>
+                <p class="text">Price</p>
+                <p class="autoPrice priceCounter"></p>
+                <p class="text">Drones Activated</p>
+                <p class="autoCount priceCounter">0</p>
+                <button class= "autoButton">Purchase</button>
+            </div>
+            <div id="humanCounter">
+                <h2 class="text">HUMAN COUNT</h2>
+                <p class="counter">0</p>
+                <button class="abductButton">Abduct<br> Human</button>
+            </div>
+            <div id="tractor">
+                <h3 class="text">Tractor Beam Upgrade</h3>
+                <p class="text">Price</p>
+                <p class="multiPrice counter"></p>
+                <p class="text">Upgrade Count</p>
+                <p class="multiCount counter">0</p>
+                <button class="multiButton">Purchase</button>
+            </div>
         </div>
+        <div id="buttonHolder">    
+            <button id="myBtn">Mission Details</button>
+            <a href="https://carsondentinger.github.io/" target="_blank">    
+                <button id="portfolio">Contact Mothership</button>
+            </a>    
+        </div>
+        <div id="buttonHolder2">
+            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">    
+                <button id="cookie">Visit Inspiration</button>
+            </a>
+            <button id="restart">Restart Invasion</button>
+        </div>
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="text" id="popupHeader">OPERATION: FREE RIDE</h2>
+                
+            </div>
+            <div class="modal-body text">
+                <p class="text">Esteemed Pleiadian,<br><br>A most sinister deal has been struck with the impressively gullible human 
+                    leader Dwight D. Eisenhower! In exchange for primitive WiFi technology we have been given clearance to enter the 
+                    airspace of planet Earth and select human specimens to return to our home planet. There we will begin the 
+                    process of assimilating our species' DNA to create hybrids and further our agenda of galactic domination. <br><br> But first,
+                    we need humans. LOTS and LOTS of humans! Purchase tractor beam upgrades to increase the amount of humans that 
+                    can be abducted at once. And don't forget to purchase abduction drones that will scour the face of the planet  
+                    and automatically abduct any stray humans they find!<br><br> These upgrades to your spaceship will compund, and soon
+                    we will be Lords of this planet......and next, the GALAXY!</p>
+            </div>
+            <div class="modal-footer text">
+                <h3>Happy Hunting!<br>-Leader Valiant Thor</h3>
+            </div>
+            </div>
+        </div>
+        <div id="footContainer">
+            <footer id="footer">
+                <p id="song" class="text"></p>
+                <p id="artist" class="text"></p>
+                <p id="album" class="text"></p>
+                <button id="nextSong" >Next Song</button>
+            </footer> 
+        </div>    
     </div>
-    <div id="footContainer">
-        <footer id="footer">
-            <p id="song" class="text"></p>
-            <p id="artist" class="text"></p>
-            <p id="album" class="text"></p>
-            <button id="nextSong" >Next Song</button>
-        </footer> 
-    </div>    
     <script src="/src/js/app.js" type="module"></script>
+    <script src="/src/js/particles.js" type="module"></script>
 </body>
 </html>

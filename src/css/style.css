@@ -13,6 +13,14 @@ body{
     background-repeat: no-repeat;
 }
 
+.metaContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
 .container{
     display: flex;
     padding: 2rem;
@@ -375,4 +383,11 @@ body{
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+#canvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
 }
